@@ -1,0 +1,104 @@
+.card {
+  width: 278.44px;
+  height: 277px;
+  border: 1px solid var(--color-blackWhisper);
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card .info {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  padding: 0 5px;
+  flex-direction: column;
+  border-bottom: 1px solid var(--color-blackWhisper);
+}
+
+.card .info h3 {
+  word-spacing: 5px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.card .info .ellipsis {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: right;
+  color: var(--color-text);
+  opacity: 0.7;
+  word-spacing: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 230px;
+  margin-top: 3px;
+}
+
+.card .actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+}
+
+.card .actions button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 25px;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  transition: all ease-out 0.3s;
+}
+
+.card .actions button a {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.card .actions p {
+  font-family: "vazir";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: right;
+  margin-left: 10px;
+}
+
+.card .actions p span {
+  font-family: "vazir";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: right;
+  color: var(--color-complementry);
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .card {
+    width: 100%;
+    margin-top: -4px;
+  }
+  .card img {
+    width: 327px !important;
+    height: 159px !important;
+  }
+  .card .info {
+    padding: 0 10px;
+  }
+  .card .actions {
+    padding: 5px 8px 7px 0;
+  }
+  .card .actions button {
+    width: 99px;
+    height: 29px;
+  }
+}

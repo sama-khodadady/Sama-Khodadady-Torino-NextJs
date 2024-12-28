@@ -1,0 +1,10 @@
+.homeLayout {
+  min-height: 400px;
+  margin-top: 74px;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .homeLayout {
+    margin-top: 64px;
+  }
+}

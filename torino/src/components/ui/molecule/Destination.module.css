@@ -1,0 +1,132 @@
+.destination {
+  border-left: 1px solid var(--color-blackMist);
+  height: 56px;
+  display: flex;
+  width: 234px;
+  padding-right: 15px;
+  gap: 15px;
+  position: relative;
+}
+
+.destination label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.destination label svg {
+  width: 22px;
+  height: 22px;
+}
+
+.destination input::placeholder {
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: var(--color-text);
+}
+
+.destination input {
+  width: 120px;
+  padding: 8px 0;
+  outline: none;
+  border: none;
+  font-size: 1.15rem;
+  padding-right: 5px;
+}
+
+.destination .cities {
+  width: 218px;
+  height: fit-content;
+  position: absolute;
+  top: 2.2rem;
+  left: 10px;
+}
+
+.destination .cities div {
+  width: 100%;
+  max-height: 251px;
+  border-radius: 8px;
+  border: 1px solid var(--color-blackMist);
+  opacity: 0px;
+  margin-top: 2rem;
+  overflow: scroll;
+}
+
+.destination .cities div::-webkit-scrollbar {
+  display: none;
+}
+
+.destination .cities div .title {
+  padding: 5px 8px;
+  height: 35px;
+  font-family: "vazir";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.31px;
+  text-align: right;
+  color: var(--color-smokyCharcoal);
+  border-radius: 11px 11px 0px 0px;
+  background-color: var(--color-whiteSmoke);
+}
+
+.destination .cities div ul {
+  list-style-type: none;
+  background-color: var(--color-white);
+}
+
+.destination .cities div li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 10px;
+  border-bottom: 1px solid var(--color-blackWhisper);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.destination .cities div li svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .destination {
+    width: 160px !important;
+    height: 47px;
+    gap: 3px;
+    align-items: center;
+    padding-right: 2.8rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-phantomGrey);
+  }
+  .destination label svg {
+    width: 18px;
+    height: 18px;
+  }
+  .destination input {
+    width: 60px;
+  }
+  .destination input::placeholder {
+    font-family: "iranSans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.63px;
+    color: var(--color-inkVil);
+  }
+  .destination label svg path {
+    stroke: var(--color--stillDust);
+  }
+  .destination .cities {
+    width: 160px;
+    top: 1.15rem;
+    left: 0;
+    z-index: 11;
+  }
+  .destination .cities div li {
+    padding: 15.5px 10px;
+  }
+}

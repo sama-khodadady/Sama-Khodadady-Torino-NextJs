@@ -1,0 +1,139 @@
+.section {
+  margin-top: 12rem;
+}
+
+.section .features {
+  margin: 0 126px;
+  width: calc(100% - 252px);
+  /* height: 560px; */
+  height: 555px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section .features .about {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+}
+
+.section .features .about .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section .features .about .header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+}
+
+.section .features .about .header div p {
+  font-family: "vazir";
+  font-size: 38px;
+  font-weight: 900;
+  margin-top: 5px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.section .features .about .header div svg {
+  display: none;
+}
+
+.section .features .about .header p {
+  font-family: "vazir";
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 62.49px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.section .features .about .header p span {
+  font-family: "vazir";
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 62.49px;
+  text-align: right;
+  color: var(--color-primary);
+}
+
+.section .features .about .description {
+  margin-top: 2.2rem;
+}
+
+.section .features .about .description h4 {
+  font-family: "vazir";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 39.56px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.section .features .about .description p {
+  width: 517px;
+  height: 264px;
+  font-family: "iranSans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: justify;
+  color: var(--color-text);
+  margin-top: 1.1rem;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .section {
+    width: 390px;
+    height: 410px;
+    margin-top: 1rem;
+  }
+  .description {
+    display: none;
+  }
+  .section .features {
+    flex-direction: column;
+    margin: 0;
+    justify-content: unset;
+    width: 390px;
+  }
+  .section .features .about .header {
+    width: 100%;
+    gap: 0;
+    margin-right: 8px;
+  }
+  .section .features .about .header div {
+    background: none;
+    position: relative;
+  }
+  .section .features .about .header div svg {
+    display: block;
+  }
+  .section .features .about .header div p {
+    font-size: 24px;
+    line-height: 37.49px;
+    position: absolute;
+    top: 10px;
+    left: 24px;
+  }
+  .section .features .about .header p {
+    margin-right: -5px;
+  }
+  .section .features .about .header p,
+  .section .features .about .header p span {
+    font-size: 24px;
+    line-height: 37.49px;
+  }
+}

@@ -1,0 +1,20 @@
+.order {
+  min-height: 642px;
+  background-color: var(--color-cloudWhite);
+  padding: 2.3rem 7.8rem;
+}
+
+.order .container {
+  display: flex;
+  gap: 18px;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .order {
+    background-color: var(--color-white);
+    padding: 1.1rem 2rem;
+  }
+  .order .container {
+    flex-direction: column;
+  }
+}

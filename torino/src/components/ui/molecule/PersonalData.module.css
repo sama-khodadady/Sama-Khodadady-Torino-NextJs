@@ -1,0 +1,159 @@
+.personalData {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 872px;
+  min-height: 171px;
+  border-radius: 10px;
+  border: 1px solid var(--color-blackMist);
+}
+
+.personalData .personalInfo {
+  margin-top: 2rem;
+}
+
+.personalData h1 {
+  font-size: 16px;
+  word-spacing: 3px;
+  font-weight: 600;
+  line-height: 24.8px;
+  text-align: right;
+  margin: 12px 10px 0 0;
+  color: var(--color-black);
+}
+
+.personalData .nameInfo,
+.personalData .birthInfo,
+.personalData .nameInfo div,
+.personalData .birthInfo div {
+  display: flex;
+  align-items: center;
+}
+
+.personalData .nameInfo div p,
+.personalData .birthInfo div p {
+  font-size: 15px;
+  word-spacing: 3px;
+  font-weight: 400;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.personalData .nameInfo,
+.personalData .birthInfo {
+  margin-right: 12px;
+  margin-top: -3px;
+}
+
+.personalData .nameInfo .name,
+.personalData .birthInfo .gender {
+  width: 470px;
+}
+
+.personalData .birthInfo {
+  margin-top: 1.8rem;
+}
+
+.personalData .nameInfo div:nth-child(1) span,
+.personalData .birthInfo div:nth-child(1) span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.personalData .nameInfo div:nth-child(2) span,
+.personalData .birthInfo div:nth-child(2) span {
+  font-family: "vazir";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.88px;
+  color: var(--color-text);
+}
+
+.personalData .edit {
+  position: absolute;
+  top: 1rem;
+  left: 1.1rem;
+  word-spacing: 5px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-complementry);
+}
+
+.personalData .edit svg {
+  margin-left: 8px;
+}
+
+.personalData .nameInfo .name p {
+  margin-left: 2rem;
+}
+
+.personalData .nameInfo .code p {
+  margin-left: 3.5rem;
+}
+
+.personalData .birthInfo .gender p {
+  margin-left: 6.3rem;
+}
+
+.personalData .birthInfo .birthDate p {
+  margin-left: 2.5rem;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .personalData {
+    width: 328px;
+    min-height: 251px;
+    margin-top: 1.25rem;
+  }
+  .personalData h1 {
+    margin: 15px 18px 0 0;
+  }
+  .personalData .personalInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2.2rem;
+  }
+  .personalData .nameInfo,
+  .personalData .birthInfo {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-right: 18px;
+  }
+  .personalData .nameInfo .name,
+  .personalData .birthInfo .gender {
+    width: fit-content;
+  }
+  .personalData .nameInfo .name p {
+    margin-left: 6rem;
+  }
+  .personalData .nameInfo .code p {
+    margin-left: 10.5rem;
+  }
+  .personalData .birthInfo .gender p {
+    margin-left: 10.3rem;
+  }
+  .personalData .birthInfo {
+    margin-top: 1.5rem;
+  }
+  .personalData .birthInfo .birthDate p {
+    margin-left: 9.5rem;
+  }
+  .personalData .edit {
+    font-size: 14px;
+    left: 1.4rem;
+    top: 1.15rem;
+  }
+  .personalData .edit svg {
+    width: 12px;
+    height: 12px;
+  }
+}

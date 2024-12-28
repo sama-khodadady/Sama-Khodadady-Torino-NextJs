@@ -1,0 +1,154 @@
+:root {
+  --color-error: rgb(204, 11, 11);
+  --color-rosaCorsa: rgb(212, 0, 0);
+  --color-springFrost: rgba(216, 255, 225, 1);
+  --color-primary: rgba(40, 167, 69, 1);
+  --color-secondary: rgba(16, 65, 27, 1);
+  --color-verdantVeil: rgba(40, 167, 69, 0.25);
+  --color-complementry: rgba(0, 158, 202, 1);
+  --color-white: rgb(255, 255, 255);
+  --color-cloudWhite: rgba(243, 243, 243, 1);
+  --color-paleGrey: rgb(244, 244, 244);
+  --color-whiteSmoke: rgb(248, 248, 248);
+  --color-doveGrey: rgb(217, 217, 217);
+  --color-milkeyVeil: rgba(255, 255, 255, 0.44);
+  --color--stillDust: rgba(125, 125, 125, 1);
+  --color-steelFog: rgb(105, 105, 105);
+  --color-shadowSlate: rgba(68, 68, 68, 1);
+  --color-smokyCharcoal: rgba(40, 40, 40, 0.7);
+  --color-twilightShadow: rgba(40, 40, 40, 0.8);
+  --color-text: rgb(40, 40, 40);
+  --color-cinderGrey: rgb(44, 44, 44);
+  --color-blackVeil: rgba(0, 0, 0, 0.25);
+  --color-blackMist: rgba(0, 0, 0, 0.2);
+  --color-phantomGrey: rgba(0, 0, 0, 0.15);
+  --color-blackWhisper: rgba(0, 0, 0, 0.12);
+  --color-inkVil: rgba(0, 0, 0, 0.5);
+  --color-noirVeil: rgba(0, 0, 0, 0.6);
+  --color-black: rgb(0, 0, 0);
+}
+
+html,
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--color-white);
+  /* border: 1px solid black; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+option {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: all ease-out 0.3s;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+.swiper {
+  width: 500px;
+  margin-right: 2.5rem !important;
+}
+
+.swiper-wrapper {
+  height: fit-content !important;
+  padding-right: 5.8rem !important;
+  box-sizing: border-box !important;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: none;
+}
+
+.swiper-pagination {
+  position: static !important;
+}
+
+.swiper-pagination-lock {
+  display: block;
+}
+
+.swiper-nav-btns {
+  gap: 10px;
+  width: 200px;
+  display: flex;
+  direction: ltr;
+  font-size: 1.5rem;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 6.5rem !important;
+}
+
+.swiper-nav-btns button {
+  border: none;
+  font-size: 24px;
+  background: none;
+  font-weight: 500;
+  line-height: 43.2px;
+  font-family: "vazir";
+  color: var(--color-text);
+}
+
+.swiper-nav-btns button svg {
+  width: 35px;
+  height: 35px;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  html,
+  body {
+    max-width: 390px;
+    min-height: 530px;
+  }
+  .swiper {
+    width: 390px;
+    margin-top: 5px;
+  }
+  .swiper .swiper-slide img {
+    width: 255px;
+    height: 290px;
+    border-radius: 35px;
+  }
+  .swiper-nav-btns {
+    gap: 0;
+    margin-right: 1rem !important;
+    margin-top: 5px;
+  }
+  .swiper-nav-btns button {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .swiper-nav-btns button svg {
+    width: 24px;
+    height: 24px;
+  }
+  .swiper-pagination {
+    width: 100px !important;
+    font-size: 22px;
+  }
+  .swiper-nav-btns span {
+    margin-top: -10px;
+  }
+}

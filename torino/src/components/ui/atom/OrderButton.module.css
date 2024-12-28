@@ -1,0 +1,29 @@
+.button {
+  width: 204px;
+  height: 56px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  border: none;
+  margin-left: 4px;
+  margin-top: -8px;
+  font-family: "vazir";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.5px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .button {
+    width: 154;
+    height: 42;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 25.25px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}

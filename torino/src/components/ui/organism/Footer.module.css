@@ -1,0 +1,289 @@
+.footer {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-top: 1px solid var(--color-blackMist);
+}
+
+.footerNext {
+  border-top: none;
+  height: 299px;
+}
+
+.footer .container {
+  height: 255px;
+  display: flex;
+  margin: 0 126px;
+  width: calc(100% - 252px);
+  justify-content: space-between;
+}
+
+.footer .containerNext {
+  border-top: 1px solid var(--color-blackMist);
+}
+
+.footer .container .desc {
+  width: 360px;
+  display: flex;
+  padding: 1.4rem 0;
+  justify-content: space-between;
+}
+
+.footer .container .desc .torino h4,
+.footer .container .desc .services h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+  word-spacing: 8px;
+  line-height: 37.2px;
+  color: var(--color-text);
+}
+
+.footer .container .desc .services ul,
+.footer .container .desc .torino ul {
+  gap: 8px;
+  display: flex;
+  margin-top: 1.5rem;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.footer .container .desc .services li,
+.footer .container .desc .torino li {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: right;
+  line-height: 27.9px;
+  color: var(--color-text);
+}
+
+.footer .container .symbols {
+  gap: 20px;
+  height: 100%;
+  display: flex;
+  direction: ltr;
+  padding: 2rem 0 0;
+  flex-direction: column;
+}
+
+.footer .container .symbols .logo,
+.footer .container .symbols p {
+  padding: 0 0 0 12px;
+}
+
+.footer .container .symbols p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23.25px;
+  color: var(--color-black);
+}
+
+.footer .container .symbols p span {
+  margin-right: 5px;
+  font-family: "vazir";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23.44px;
+  color: var(--color-black);
+}
+
+.footer .container .symbols div {
+  gap: 30px;
+  display: flex;
+  padding-top: 14px;
+  align-items: center;
+}
+
+.footer .policy {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--color-blackMist);
+}
+
+.footer .policy p {
+  font-size: 15px;
+  font-weight: 400;
+  word-spacing: 5px;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.footer .advantages {
+  padding: 25px 0;
+  margin: 0 126px;
+  width: calc(100% - 252px);
+  border-bottom: 1px solid var(--color-blackMist);
+}
+
+.footer .advantages .items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .advantages .items .item {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.footer .advantages .items .item:nth-child(2) {
+  margin-right: 1.75rem;
+}
+
+.footer .advantages .items .item:last-of-type {
+  justify-content: flex-end;
+  gap: 3px;
+}
+
+.footer .advantages .items .item:last-of-type h3 {
+  margin-right: 10px;
+}
+
+.footer .advantages .items .item:last-of-type p {
+  padding-right: 10px;
+}
+
+.footer .advantages .item h3 {
+  font-size: 27px;
+  margin-top: 5px;
+  font-weight: 500;
+  text-align: right;
+  font-family: "vazir";
+  line-height: 40.63px;
+  color: var(--color-text);
+}
+
+.footer .advantages .item p {
+  height: 50px;
+  width: 209px;
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: right;
+  font-family: "vazir";
+  color: var(--color-text);
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .footer {
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
+    height: fit-content;
+    margin-top: 2.9rem;
+    justify-content: flex-start;
+  }
+  .footer .advantages {
+    padding: 44px 15px 9px 0;
+    margin: 0;
+    width: 100%;
+    border-bottom: 2px dashed var(--color-blackVeil);
+  }
+  .footer .advantages .items {
+    flex-direction: column;
+    gap: 2.1rem;
+  }
+  .footer .advantages .items .item {
+    gap: 17px;
+  }
+  .footer .advantages .items .item img {
+    width: 71.27px;
+    height: 64px;
+  }
+  .footer .advantages .items .item h3 {
+    font-size: 14px;
+    margin-top: 0;
+    line-height: 21.88px;
+  }
+  .footer .advantages .items .item p {
+    font-size: 12px;
+    line-height: 18.75px;
+    margin-top: 2px;
+  }
+  .footer .advantages .items .item:nth-child(2) {
+    margin-right: 0;
+  }
+  .footer .advantages .items .item:last-of-type {
+    justify-content: flex-start;
+    margin-top: 7px;
+  }
+  .footer .advantages .items .item:last-of-type h3 {
+    margin-right: 5px;
+  }
+
+  .footer .advantages .items .item:last-of-type p {
+    padding-right: 5px;
+  }
+  .footer .container {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    gap: 0;
+    flex-direction: column;
+  }
+  .footer .container .desc {
+    justify-content: unset;
+    gap: 6.5rem;
+  }
+  .footer .container .symbols {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 105px;
+    padding: 0;
+  }
+  .footer .container .symbols div {
+    width: 140px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 10px;
+  }
+  .footer .container .symbols div img {
+    width: 35px;
+    height: 38px;
+  }
+  .footer .container .symbols > img {
+    width: 100px;
+    height: 30px;
+    margin-top: 1.5rem;
+    margin-left: -10px;
+  }
+  .footer .container .symbols p {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 15px;
+    line-height: 21.7px;
+    margin-left: -15px;
+  }
+  .footer .container .symbols p span {
+    font-size: 15px;
+    line-height: 21.88px;
+  }
+  .footer .container .desc .torino h4,
+  .footer .container .desc .services h4 {
+    font-size: 22px;
+    line-height: 34.1px;
+  }
+  .footer .container .desc .services li,
+  .footer .container .desc .torino li {
+    font-size: 16px;
+    line-height: 24.8px;
+  }
+  .footer .container .desc .services ul,
+  .footer .container .desc .torino ul {
+    gap: 10px;
+  }
+  .footer .policy {
+    padding: 9px 0 0 0;
+  }
+  .footer .policy p {
+    font-size: 12px;
+    line-height: 18.6px;
+  }
+}

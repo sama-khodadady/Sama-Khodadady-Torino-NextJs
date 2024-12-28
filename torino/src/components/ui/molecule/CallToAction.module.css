@@ -1,0 +1,168 @@
+.callToAction {
+  margin: 6.7rem 126px;
+  width: calc(100% - 252px);
+  display: flex;
+  width: 1188px;
+  height: 251px;
+  border-radius: 10px;
+  border: 1px solid var(--color-blackVeil);
+}
+
+.callToAction .title {
+  width: 73%;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  position: relative;
+  padding: 2.35rem 3.5rem 0 0;
+}
+
+.callToAction .title h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 74.4px;
+  text-align: right;
+  color: var(--color-white);
+  word-spacing: 2px;
+}
+
+.callToAction .title h1 span {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 74.4px;
+  text-align: right;
+  color: var(--color-secondary);
+}
+
+.callToAction .title p {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 49.6px;
+  text-align: right;
+  color: var(--color-white);
+  word-spacing: 10px;
+  margin-top: 7px;
+}
+
+.callToAction .title img {
+  position: absolute;
+  bottom: 0;
+  left: 2.5rem;
+}
+
+.callToAction .actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.callToAction .actions div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 159px;
+  height: 60px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.callToAction .actions div svg {
+  width: 24px;
+  height: 24px;
+}
+
+.callToAction .actions div p {
+  font-family: "vazir";
+  font-size: 28px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.callToAction .actions button {
+  width: 175px;
+  height: 41px;
+  padding: 8px;
+  border-radius: 9px;
+  background-color: var(--color-secondary);
+  transition: all ease-out 0.3s;
+}
+
+.callToAction .actions button a {
+  color: var(--color-white);
+  font-family: "vazir";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: right;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .callToAction {
+    width: calc(100% - 3.9rem);
+    margin: 5.15rem 1.95rem 0;
+    flex-direction: column;
+    border: none;
+  }
+  .callToAction .title {
+    width: 327px;
+    height: 128px;
+    padding: 12px 12px 0 0;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid var(--color-blackVeil);
+    border-bottom: none;
+  }
+  .callToAction .title img {
+    width: 195px;
+    height: 158px;
+    left: 0;
+  }
+  .callToAction .title h1,
+  .callToAction .title h1 span {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 34.1px;
+  }
+  .callToAction .title p {
+    font-size: 14px;
+    font-weight: 400;
+    word-spacing: 5px;
+    line-height: 21.7px;
+  }
+  .callToAction .actions {
+    border: 1px solid var(--color-blackVeil);
+    border-top: none;
+    width: 327px;
+    gap: 10px;
+    padding: 12px 0 11px 0;
+    border-radius: 0 0 10px 10px;
+    flex-direction: row;
+  }
+  .callToAction .actions div {
+    width: 124px;
+    height: 38px;
+    margin-bottom: 0;
+    padding: 8px;
+    gap: 8px;
+  }
+  .callToAction .actions div svg {
+    width: 20px;
+    height: 20px;
+  }
+  .callToAction .actions div p {
+    font-size: 20px;
+    line-height: 31.25px;
+  }
+  .callToAction .actions button {
+    width: 136px;
+    height: 38px;
+    padding: 8px;
+    border-radius: 9px;
+    border: none;
+  }
+  .callToAction .actions button a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.88px;
+  }
+}

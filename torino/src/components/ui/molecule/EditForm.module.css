@@ -1,0 +1,176 @@
+.editForm {
+  margin-top: 1.2rem;
+}
+
+.editForm .inputs {
+  display: flex;
+  align-items: center;
+  width: 865px;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  padding: 0 14px;
+}
+
+.editForm .inputs .fullName,
+.editForm .inputs .nationalCode,
+.editForm .inputs .birthdate,
+.editForm .inputs .gender {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+
+.editForm .inputs .fullName .error,
+.editForm .inputs .nationalCode .error,
+.editForm .inputs .birthdate .error,
+.editForm .inputs .gender .error {
+  font-size: 10px;
+  margin-top: 5px;
+  word-spacing: 2px;
+  color: var(--color-error);
+}
+
+.editForm .inputs div input,
+.editForm .inputs div select {
+  width: 255px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--color-inkVil);
+}
+
+.editForm .inputs .gender select {
+  appearance: none;
+  background: transparent;
+}
+
+.editForm .inputs input[type="number"]::-webkit-inner-spin-button,
+.editForm .inputs input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.editForm .inputs div input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-inkVil);
+}
+
+.editForm .inputs .birthdate,
+.editForm .inputs .gender {
+  width: fit-content;
+  /* height: fit-content; */
+  position: relative;
+  margin-top: 0;
+}
+
+.editForm .inputs .birthdate label svg {
+  width: 16px;
+  height: 16px;
+}
+
+.editForm .inputs .birthdate input.customInput {
+  text-align: center;
+}
+
+.editForm .inputs .birthdate input.customInput::placeholder {
+  padding-right: 25px;
+}
+
+.editForm .inputs .birthdate label.calender {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.editForm .inputs .gender {
+  position: relative;
+}
+
+.editForm .inputs .gender svg {
+  position: absolute;
+  top: 1rem;
+  left: 0.7rem;
+}
+
+.editForm .inputs .gender .labelLine {
+  position: absolute;
+  font-size: 14px;
+  top: -8px;
+  right: 10px;
+  padding: 0 10px;
+  font-weight: 400;
+  background-color: var(--color-white);
+  text-align: right;
+  transition: all 0.2s ease-in-out;
+  color: var(--color-inkVil);
+}
+
+.editForm .inputs .gender {
+  position: relative;
+  margin-top: -23px;
+}
+
+.editForm .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6px 1.9rem;
+  gap: 12px;
+  border-top: 1px solid var(--color-blackMist);
+}
+
+.editForm .actions .submit {
+  width: 144px;
+  height: 41px;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24.8px;
+  color: var(--color-white);
+  border-radius: 5px;
+  background-color: var(--color-primary);
+}
+
+.editForm .actions .cancel {
+  width: 144px;
+  height: 41px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24.8px;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-radius: 5px;
+  border: 2px solid var(--color-primary);
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .editForm {
+    margin-top: 1.5rem;
+  }
+  .editForm .inputs {
+    width: 100%;
+    gap: 0;
+    padding: 0 19px;
+  }
+  .editForm .inputs div input,
+  .editForm .inputs .gender select {
+    width: 289px;
+    height: 40px;
+  }
+  .editForm .inputs .gender {
+    margin-top: 0;
+  }
+  .editForm .actions {
+    padding: 0 1.05rem 6px;
+    border-top: none;
+  }
+  .editForm .actions .submit,
+  .editForm .actions .cancel {
+    width: 138.72px;
+  }
+}

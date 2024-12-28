@@ -1,0 +1,180 @@
+.header {
+  height: 74px;
+  width: 1440px;
+  display: flex;
+  z-index: 3333;
+  position: fixed;
+  padding: 0 126px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 4px 0px var(--color-phantomGrey);
+}
+
+.header .items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .items .logo img {
+  margin-top: 10px;
+}
+
+.header .items .logo .menu {
+  display: none;
+}
+
+.header .navbar {
+  width: 499px;
+  margin-right: 5.5rem;
+}
+
+.header .navbar ul {
+  gap: 3.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: flex-start;
+}
+
+.header .navbar ul a {
+  font-size: 17px;
+  text-align: right;
+  line-height: 24.8px;
+  color: var(--color-text);
+}
+
+.header .navbar ul a.active {
+  color: var(--color-primary);
+}
+
+.header button {
+  gap: 5px;
+  gap: 6px;
+  width: 166px;
+  height: 44px;
+  padding: 8px;
+  display: flex;
+  background: none;
+  border-radius: 8px;
+  align-items: center;
+  color: var(--color-primary);
+  transition: all ease-out 0.3s;
+  border: 2px solid var(--color-primary);
+}
+
+.header button svg:nth-child(1) {
+  width: 24px;
+  height: 24px;
+}
+
+.header button svg:nth-child(1) path {
+  fill: var(--color-primary);
+}
+
+.header button svg:nth-child(2) {
+  display: none;
+}
+
+.header button p {
+  font-size: 18px;
+  font-weight: 500;
+  word-spacing: 5px;
+  font-family: "vazir";
+  transition: all ease-out 0.3s;
+}
+
+.header .sidebarMenu {
+  display: none;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .header {
+    height: 65;
+    width: 390px;
+    padding: 0 30px;
+  }
+  .header .items .logo img {
+    display: none;
+  }
+  .header .items .logo .menu {
+    display: block;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .header button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-primary);
+  }
+  .header button svg:nth-child(1),
+  .header button p {
+    display: none;
+  }
+  .header button svg:nth-child(2) {
+    display: block;
+  }
+  .header .sidebarMenu {
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 4444;
+    height: 816px;
+    display: flex;
+    display: block;
+    position: fixed;
+    animation: fadein 0.5s;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--color-inkVil);
+  }
+  .header .sidebarMenu .menu {
+    gap: 22px;
+    width: 209px;
+    display: flex;
+    height: 816px;
+    padding: 35px 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 12px 0px 0px 12px;
+    background-color: var(--color-white);
+  }
+  .header .sidebarMenu .menu ul {
+    gap: 1.3rem;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+  .header .sidebarMenu .menu ul li a {
+    gap: 10px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 24.8px;
+    color: var(--color-text);
+  }
+  .header .sidebarMenu .menu ul li a.active {
+    color: var(--color-primary);
+  }
+  .header .sidebarMenu .menu ul li a.active svg path {
+    stroke: var(--color-primary);
+  }
+  .header .sidebarMenu .menu ul li:nth-child(1) a.active svg path {
+    fill: var(--color-primary);
+    stroke: none;
+  }
+}

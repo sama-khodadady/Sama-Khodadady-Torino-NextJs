@@ -1,0 +1,120 @@
+.form {
+  width: 865px;
+  height: 228px;
+  border-radius: 10px;
+  padding: 15px 22px 0 0;
+  border: 1px solid var(--color-blackMist);
+  background-color: var(--color-white);
+}
+
+.form h1 {
+  display: flex;
+  gap: 12px;
+  margin-top: 7px;
+  align-items: center;
+  font-family: "vazir";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.5px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.form h1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.form .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.form .inputs input,
+.form .inputs select {
+  width: 263px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--color-inkVil);
+  outline: none;
+}
+
+.form .inputs .gender select {
+  appearance: none;
+  background: transparent;
+}
+
+.form .inputs input::placeholder {
+  word-spacing: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-inkVil);
+}
+
+.form .inputs .fullName,
+.form .inputs .nationalCode,
+.form .inputs .gender {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+
+.form .inputs .gender {
+  position: relative;
+}
+
+.form .inputs .gender svg {
+  position: absolute;
+  top: 1rem;
+  left: 0.7rem;
+}
+
+.form .inputs .gender .labelLine {
+  position: absolute;
+  font-size: 14px;
+  top: -8px;
+  right: 10px;
+  padding: 0 10px;
+  font-weight: 400;
+  background-color: var(--color-white);
+  text-align: right;
+  transition: all 0.2s ease-in-out;
+  color: var(--color-inkVil);
+}
+
+.form .inputs .error {
+  font-size: 9px;
+  margin-top: 2px;
+  word-spacing: 2px;
+  color: var(--color-error);
+}
+
+.form .inputs input[type="number"]::-webkit-inner-spin-button,
+.form .inputs input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .form {
+    width: 328px;
+    height: 359px;
+    padding: 15px 19px 0 0;
+  }
+  .form h1 {
+    margin-top: 1px;
+  }
+  .form .inputs {
+    margin-top: 17px;
+    gap: 4px;
+  }
+  .form .inputs input,
+  .form .inputs select {
+    width: 287px;
+  }
+}

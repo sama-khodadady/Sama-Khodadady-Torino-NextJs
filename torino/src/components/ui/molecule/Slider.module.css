@@ -1,0 +1,11 @@
+.slider {
+  display: flex;
+  width: 600px;
+  position: relative;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .slider {
+    flex-direction: column;
+  }
+}

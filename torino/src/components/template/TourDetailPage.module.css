@@ -1,0 +1,185 @@
+.tour {
+  height: 642px;
+  background-color: var(--color-cloudWhite);
+  padding: 2.3rem 7.68rem;
+}
+
+.tour .container {
+  width: 1188px;
+  height: 427px;
+  border-radius: 10px;
+  padding: 1.75rem 1.2rem 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-blackMist);
+  display: flex;
+  flex-direction: column;
+}
+
+.tour .container .details {
+  display: flex;
+  height: fit-content;
+}
+
+.tour .container .details img {
+  border-radius: 12px;
+}
+
+.tour .container .details .desc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 265px;
+  padding-right: 1.5rem;
+}
+
+.tour .container .details .desc .title {
+  height: 200px;
+}
+
+.tour .container .details .desc .title h1 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 49.6px;
+  text-align: right;
+  color: var(--color-black);
+  margin-top: 2px;
+  margin-bottom: 0.8rem;
+}
+
+.tour .container .details .desc .title .days {
+  font-family: "vazir";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31.25px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.tour .container .details .desc .title .feature {
+  display: flex;
+  margin-top: 1.4rem;
+}
+
+.tour .container .details .desc .title .feature span {
+  width: 170px;
+  height: 47px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: right;
+  color: var(--color--stillDust);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-left: 5px;
+}
+
+.tour .container .details .desc .title .feature span svg {
+  height: 24px;
+  width: 24px;
+}
+
+.tour .container .details .desc .title .feature span:nth-child(2) {
+  padding-right: 20px;
+}
+
+.tour .container .details .desc .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour .container .details .desc .actions p {
+  font-family: "vazir";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.88px;
+  text-align: right;
+  color: var(--color-twilightShadow);
+}
+
+.tour .container .details .desc .actions p span {
+  font-family: "vazir";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 43.75px;
+  text-align: right;
+  color: var(--color-complementry);
+  margin-left: 5px;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .tour {
+    position: relative;
+    background-color: var(--color-white);
+    padding: 1.5rem 1.8rem;
+  }
+  .tour .container {
+    border: none;
+    width: 330px;
+    padding: 0;
+    height: fit-content;
+  }
+  .tour .container .details {
+    flex-direction: column;
+  }
+  .tour .container .details img {
+    width: 330px;
+    height: 220px;
+  }
+  .tour .container .details .desc {
+    padding: 16px 0 0 0;
+    height: 350px;
+    justify-content: space-between;
+  }
+  .tour .container .details .desc .title {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .tour .container .details .desc .title h1 {
+    width: 200px;
+    font-size: 24px;
+    line-height: 37.2px;
+  }
+  .tour .container .details .desc .title .days {
+    font-size: 15px;
+    margin-right: 2.8rem;
+    margin-top: 8px;
+    line-height: 23.44px;
+  }
+  .tour .container .details .desc .title .feature {
+    margin-top: -9px;
+    width: 100%;
+  }
+  .tour .container .details .desc .title .feature span {
+    font-size: 14px;
+    width: fit-content;
+    line-height: 20.15px;
+    gap: 10px;
+    margin-left: 0;
+    padding: 0;
+  }
+  .tour .container .details .desc .title .feature span:nth-child(1) {
+    margin-left: 10px;
+  }
+  .tour .container .details .desc .title .feature span:nth-child(2) {
+    margin-left: 28px;
+  }
+  .tour .container .details .desc .title .feature span svg {
+    width: 15px;
+    height: 15px;
+  }
+  .tour .container .details .desc .actions {
+    direction: ltr;
+  }
+  .tour .container .details .desc .actions p {
+    font-size: 10px;
+    line-height: 15.63px;
+    direction: rtl;
+  }
+  .tour .container .details .desc .actions p span {
+    font-size: 24px;
+    line-height: 37.5px;
+  }
+}

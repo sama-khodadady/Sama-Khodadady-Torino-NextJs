@@ -1,0 +1,104 @@
+.sidebar {
+  width: 307px;
+  height: 228px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+}
+
+.sidebar .title {
+  display: flex;
+  padding: 1.2rem 11px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dashed var(--color-inkVil);
+}
+
+.sidebar .title h1 {
+  font-size: 25px;
+  font-weight: 600;
+  word-spacing: 7px;
+  line-height: 37.2px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.sidebar .title span {
+  font-family: "vazir";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  word-spacing: 2px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.sidebar .price {
+  display: flex;
+  padding: 1.2rem 11px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar .price h3 {
+  font-family: "vazir";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.sidebar .price p {
+  font-family: "vazir";
+  font-size: 14px;
+  font-weight: 400;
+  word-spacing: 5px;
+  line-height: 21.88px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.sidebar .price p span {
+  font-family: "vazir";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 43.75px;
+  text-align: right;
+  color: var(--color-complementry);
+}
+
+.sidebar button {
+  background-color: var(--color-primary);
+  border: none;
+  width: 283px;
+  height: 56px;
+  padding: 8px;
+  margin-right: 11px;
+  border-radius: 10px;
+  font-family: "vazir";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.5px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .sidebar {
+    width: 328px;
+    height: 228px;
+    border: 1px solid var(--color-blackMist);
+  }
+  .sidebar .title,
+  .sidebar .price {
+    padding: 1.2rem 30px 1.2rem 11px;
+  }
+  .sidebar .title h1 {
+    font-size: 24px;
+    line-height: 37.2px;
+  }
+  .sidebar button {
+    width: 302px;
+    margin-top: -5px;
+  }
+}

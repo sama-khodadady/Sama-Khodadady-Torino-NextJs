@@ -1,0 +1,39 @@
+.main .banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .banner h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 43.4px;
+  text-align: right;
+  color: var(--color-text);
+  word-spacing: 7px;
+  margin-top: 10px;
+}
+
+.main .banner h1 span {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 43.4px;
+  text-align: right;
+  color: var(--color-primary);
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .main img {
+    width: 390px;
+    height: 119px;
+  }
+  .main .banner h1,
+  .main .banner h1 span {
+    font-size: 18px;
+    line-height: 24.8px;
+    word-spacing: 2px;
+    margin-top: 1rem;
+  }
+}

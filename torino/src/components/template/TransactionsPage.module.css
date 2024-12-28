@@ -1,0 +1,124 @@
+.transaction {
+  width: 872px;
+  min-height: 260px;
+  margin-right: 32px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--color-blackMist);
+}
+
+.transaction table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction table thead {
+  background-color: var(--color-cloudWhite);
+  height: 55px;
+}
+
+.transaction table thead th {
+  padding-right: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  word-spacing: 5px;
+  line-height: 24.8px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.transaction table thead th:nth-child(1) {
+  border-radius: 0 10px 0 0;
+}
+
+.transaction table thead th:nth-child(2) {
+  padding-right: 4rem;
+}
+
+.transaction table thead th:nth-child(3) {
+  padding-right: 7rem;
+}
+
+.transaction table thead th:last-of-type {
+  border-radius: 10px 0 0 0;
+  padding-right: 7.5rem;
+}
+
+.transaction table tbody td {
+  padding: 22px 15px 0px 0;
+  font-family: "vazir";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.89px;
+  text-align: right;
+  word-spacing: 2px;
+  color: var(--color-black);
+}
+
+.transaction table tbody td:nth-child(2) {
+  padding-right: 4rem;
+}
+
+.transaction table tbody td:nth-child(3) {
+  padding-right: 5rem;
+}
+
+.transaction table tbody td:last-of-type {
+  padding-right: 7rem;
+  word-spacing: 5px;
+}
+
+.transaction .loading {
+  text-align: center;
+  padding: 22px 0 !important;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .transaction {
+    margin-right: 0;
+    width: 328px;
+  }
+  .transaction table {
+    width: 326px;
+  }
+  .transaction table thead {
+    background-color: var(--color-cloudWhite);
+    height: 40px;
+  }
+  .transaction table thead th {
+    font-size: 12px;
+    line-height: 18.6px;
+    word-spacing: 1px;
+  }
+  .transaction table thead th:nth-child(2) {
+    padding-right: 5px;
+  }
+
+  .transaction table thead th:nth-child(3),
+  .transaction table tbody td:nth-child(3) {
+    display: none;
+  }
+
+  .transaction table thead th:last-of-type {
+    padding-right: 40px;
+  }
+  .transaction table tbody td {
+    font-size: 13px;
+    line-height: 20.33px;
+    padding: 10px 15px 12px 0;
+  }
+  .transaction table tbody td:nth-child(1) {
+    font-size: 9px;
+    line-height: 14.07px;
+  }
+  .transaction table tbody td:nth-child(2) {
+    padding-right: 10px;
+  }
+  .transaction table tbody td:last-of-type {
+    padding-right: 15px;
+    word-spacing: 1px;
+  }
+  .transaction table tbody td:last-of-type span {
+    display: none;
+  }
+}

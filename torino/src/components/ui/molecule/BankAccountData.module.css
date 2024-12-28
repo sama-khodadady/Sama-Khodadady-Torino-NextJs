@@ -1,0 +1,201 @@
+.bank {
+  position: relative;
+  width: 872px;
+  margin-top: 1.55rem;
+  min-height: 171px;
+  border-radius: 10px;
+  border: 1px solid var(--color-blackMist);
+}
+
+.bank h1 {
+  margin-right: 12px;
+  margin-top: 12px;
+  font-size: 17px;
+  word-spacing: 3px;
+  font-weight: 600;
+  line-height: 24.8px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.bank .bankData {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 12px;
+  margin-top: 1.8rem;
+}
+
+.bank .bankData div {
+  display: flex;
+}
+
+.bank .bankData div p {
+  font-size: 15px;
+  font-weight: 400;
+  word-spacing: 2px;
+  margin-left: 2.8rem;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.bank .bankData div span {
+  font-family: "vazir";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.88px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.bank .bankData .shabaCode {
+  width: 470px;
+}
+
+.bank .bankData .debitCard {
+  width: 350px;
+}
+
+.bank .bankData .accountID {
+  margin-top: 1.8rem;
+}
+
+.bank .bankData .edit {
+  position: absolute;
+  top: 0.8rem;
+  left: 1.1rem;
+  word-spacing: 5px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-complementry);
+}
+
+.bank .bankData .edit svg {
+  margin-left: 8px;
+}
+
+.bank .bankForm .inputs {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding-right: 14px;
+  margin-top: 1.2rem;
+}
+
+.bank .bankForm .inputs div {
+  display: flex;
+  flex-direction: column;
+  height: 65px;
+}
+
+.bank .bankForm .inputs input[type="number"]::-webkit-inner-spin-button,
+.bank .bankForm .inputs input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.bank .bankForm .inputs div input {
+  width: 255px;
+  height: 45px;
+  padding: 8px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--color-inkVil);
+}
+
+.bank .bankForm .inputs div span {
+  font-size: 10px;
+  margin-top: 5px;
+  word-spacing: 2px;
+  color: var(--color-error);
+}
+
+.bank .bankForm .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6px 1.9rem;
+  gap: 12px;
+  border-top: 1px solid var(--color-blackMist);
+  margin-top: 0;
+}
+
+.bank .bankForm .actions .submit {
+  width: 144px;
+  height: 41px;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24.8px;
+  color: var(--color-white);
+  border-radius: 5px;
+  background-color: var(--color-primary);
+}
+
+.bank .bankForm .actions .cancel {
+  width: 144px;
+  height: 41px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24.8px;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-radius: 5px;
+  border: 2px solid var(--color-primary);
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .bank {
+    width: 328px;
+    min-height: 205px;
+    margin-top: 1.2rem;
+  }
+  .bank h1 {
+    font-size: 16px;
+    margin: 16px;
+  }
+  .bank .bankData {
+    gap: 1.5rem;
+    padding-right: 16px;
+    margin-top: 2.15rem;
+  }
+  .bank .bankData .accountID {
+    margin-top: 0;
+  }
+  .bank .bankData div p {
+    margin-left: 4rem;
+    text-align: center;
+  }
+  .bank .bankData .edit {
+    font-size: 14px;
+    left: 1.4rem;
+    top: 1.15rem;
+  }
+  .bank .bankData .edit svg {
+    width: 12px;
+    height: 12px;
+  }
+  .bank .bankForm .inputs {
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 0 19px;
+    margin-top: 1.5rem;
+  }
+  .bank .bankForm .inputs div input {
+    width: 289px;
+    height: 40px;
+  }
+  .bank .bankForm .actions {
+    padding: 0 1.05rem 6px;
+    border: none;
+  }
+  .bank .bankForm .actions .submit,
+  .bank .bankForm .actions .cancel {
+    width: 138.72px;
+  }
+}

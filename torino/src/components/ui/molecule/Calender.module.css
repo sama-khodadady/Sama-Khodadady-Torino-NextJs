@@ -1,0 +1,66 @@
+.calender {
+  height: 56px;
+  display: flex;
+  width: 232px;
+  gap: 15px;
+  padding-right: 13px;
+  position: relative;
+  align-items: center;
+}
+
+.calender label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.calender label svg {
+  width: 22px;
+  height: 22px;
+}
+
+.calender label svg path {
+  stroke: var(--color-cinderGrey);
+  stroke-width: 1.15;
+  stroke-opacity: 1;
+}
+
+.calender .customInput::placeholder {
+  font-weight: 600;
+  font-size: 1.35rem;
+  width: 42.36px;
+  color: var(--color-text);
+}
+
+.calender .customInput {
+  outline: none;
+  text-align: right;
+  border: none;
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .calender {
+    width: 328px;
+    height: 47px;
+    margin-top: 0.75rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-phantomGrey);
+  }
+  .calender .customInput {
+    width: 145px;
+    margin-right: 4rem;
+    height: 37px;
+  }
+  .calender .customInput::placeholder {
+    font-family: "iranSans";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 1.5rem;
+    color: var(--color-inkVil);
+  }
+  .calender label svg path {
+    stroke: var(--color--stillDust);
+  }
+}

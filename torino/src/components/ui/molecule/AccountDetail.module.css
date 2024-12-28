@@ -1,0 +1,182 @@
+.account {
+  width: 872px;
+  height: 115px;
+  padding: 12px 12px 0 0;
+  border-radius: 10px;
+  border: 1px solid var(--color-blackMist);
+}
+
+.account h1 {
+  font-size: 17px;
+  font-weight: 600;
+  word-spacing: 5px;
+  line-height: 24.8px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.account .accountInfo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 1.7rem;
+}
+
+.account .accountInfo div {
+  display: flex;
+}
+
+.account .accountInfo div p {
+  font-size: 15px;
+  font-weight: 400;
+  word-spacing: 5px;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-black);
+}
+
+.account .accountInfo div span {
+  font-family: "vazir";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.88px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.account .accountInfo .mobile {
+  width: 472px;
+  gap: 2rem;
+}
+
+.account .accountInfo .email {
+  gap: 10px;
+  width: 250px;
+}
+
+.account .accountInfo button {
+  background: none;
+  margin-top: 3px;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.7px;
+  color: var(--color-complementry);
+}
+
+.account .accountInfo button svg {
+  margin-left: 8px;
+}
+
+.account form {
+  display: flex;
+  margin-top: 11px;
+}
+
+.account form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.account form .mobile {
+  width: 444px;
+}
+
+.account form div span {
+  color: var(--color-error);
+  font-size: 12px;
+  word-spacing: 3px;
+}
+
+.account form input {
+  width: 255px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--color-inkVil);
+  outline: none;
+}
+
+.account form input::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  word-spacing: 4px;
+  line-height: 21.7px;
+  text-align: right;
+  color: var(--color-inkVil);
+}
+
+.account form button {
+  width: 122px;
+  height: 45px;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  margin-right: 12px;
+  line-height: 24.8px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .account {
+    width: 328px;
+    height: 169px;
+    padding: 17px 19px 0 0;
+  }
+  .account h1 {
+    font-size: 16px;
+  }
+  .account .accountInfo {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.5rem;
+    margin-right: 0;
+  }
+  .account .accountInfo div p {
+    font-size: 14px;
+    line-height: 21.7px;
+  }
+  .account .accountInfo .mobile {
+    width: 472px;
+    gap: 8rem;
+  }
+
+  .account .accountInfo .email {
+    gap: 5px;
+    width: 210px;
+  }
+  .account .accountInfo div span {
+    font-size: 13px;
+    line-height: 21.88px;
+  }
+  .account .accountInfo button {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 0;
+    margin-right: -30px;
+  }
+  .account form {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+  .account form input {
+    width: 186px;
+    height: 40px;
+  }
+  .account form button {
+    width: 93px;
+    height: 40px;
+    margin-right: -2px;
+  }
+  .account form div {
+    height: 52px;
+  }
+  .account form div span {
+    font-size: 8px;
+  }
+}

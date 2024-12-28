@@ -1,0 +1,159 @@
+.form {
+  position: relative;
+  width: 571px;
+  height: 362px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 35px 39px 35px 40px;
+}
+
+.form h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43.4px;
+  text-align: right;
+  color: var(--color-text);
+  margin-top: 1.6rem;
+  margin-right: 8.2rem;
+  word-spacing: 2px;
+  animation: loadH1 0.7s forwards;
+}
+
+.form .number {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24.8px;
+  text-align: right;
+  color: var(--color-text);
+  margin-top: 5px;
+  margin-right: 6.2rem;
+  word-spacing: 2px;
+  animation: loadH1 0.7s forwards;
+}
+
+.form .number span {
+  font-family: "vazir";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: right;
+}
+
+.form div {
+  display: flex;
+  justify-content: center;
+  direction: ltr;
+  margin-top: 6px;
+  animation: loadH1 0.7s forwards;
+}
+
+.form .timer {
+  font-size: 12px;
+  word-spacing: 3px;
+  font-weight: 400;
+  line-height: 18.6px;
+  text-align: right;
+  margin-top: 1rem;
+  margin-right: 11.75rem;
+  color: var(--color-text);
+  animation: loadH1 0.7s forwards;
+}
+
+.form .timer span {
+  font-family: "vazir";
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 5px;
+  line-height: 18.75px;
+  text-align: right;
+  color: var(--color-text);
+}
+
+.form .login {
+  width: 100%;
+  height: 54px;
+  padding: 8px;
+  margin-top: 1.65rem;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  font-family: "vazir";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.13px;
+  color: var(--color-white);
+  border: 1px solid var(--color-blackVeil);
+}
+
+.form .login p {
+  animation: loadH1 0.7s forwards;
+}
+
+.form .back {
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
+  font-size: 25px;
+  color: var(--color-black);
+}
+
+.form .otpInput {
+  width: 53px !important;
+  height: 54px;
+  border-radius: 6px;
+  border: 1px solid var(--color-blackVeil);
+  margin-right: 5px;
+  outline-color: var(--color-complementry);
+}
+
+@keyframes loadH1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 780px) {
+  .form {
+    width: 358px;
+    height: 362px;
+    padding: 35px 50px;
+    border-radius: 20px;
+    padding: 35px 40px 35px 40px;
+    box-shadow: 0px 4px 4px 0px var(--color-blackVeil);
+  }
+  .form h1 {
+    font-size: 25px;
+    line-height: 34.1px;
+    margin-top: 1.65rem;
+    margin-right: 2.8rem;
+  }
+  .form .number {
+    font-size: 16px;
+    line-height: 21.7px;
+    margin-right: 10px;
+    margin-top: 1rem;
+  }
+  .form .number span {
+    font-size: 16px;
+    line-height: 21.88px;
+  }
+  .form .otpInput {
+    width: 50px !important;
+    height: 45px;
+  }
+  .form .timer {
+    margin-right: 5.2rem;
+    margin-top: 1.5rem;
+  }
+  .form .back {
+    top: 1rem;
+  }
+}
