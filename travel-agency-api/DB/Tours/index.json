@@ -14,7 +14,7 @@
     "title": "تور کردستان",
     "fleetVehicle": "اتوبوس",
     "price": 1350000,
-    "availableSeats": 20,
+    "availableSeats": 19,
     "insurance": true,
     "options": [
       "راهنمای تور",
@@ -84,7 +84,7 @@
     "title": "تور اربیل",
     "fleetVehicle": "اس یو وی",
     "price": 10500000,
-    "availableSeats": 17,
+    "availableSeats": 16,
     "insurance": false,
     "options": [
       "نهار و صبحانه",
