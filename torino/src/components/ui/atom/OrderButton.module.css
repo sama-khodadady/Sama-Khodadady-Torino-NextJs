@@ -15,6 +15,10 @@
   color: var(--color-white);
 }
 
+.button:disabled {
+  opacity: 0.5;
+}
+
 @media (min-width: 390px) and (max-width: 780px) {
   .button {
     width: 154;

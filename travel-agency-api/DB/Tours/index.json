@@ -14,7 +14,7 @@
     "title": "تور کردستان",
     "fleetVehicle": "اتوبوس",
     "price": 1350000,
-    "availableSeats": 19,
+    "availableSeats": 8,
     "insurance": true,
     "options": [
       "راهنمای تور",
@@ -38,7 +38,7 @@
     "title": "تور مادرید",
     "fleetVehicle": "ون",
     "price": 24000000,
-    "availableSeats": 11,
+    "availableSeats": 0,
     "insurance": false,
     "options": [
       "راهنمای تور",
@@ -61,7 +61,7 @@
     "title": "تور سلیمانیه",
     "fleetVehicle": "اس یو وی",
     "price": 65000000,
-    "availableSeats": 37,
+    "availableSeats": 26,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
@@ -84,7 +84,7 @@
     "title": "تور اربیل",
     "fleetVehicle": "اس یو وی",
     "price": 10500000,
-    "availableSeats": 16,
+    "availableSeats": 4,
     "insurance": false,
     "options": [
       "نهار و صبحانه",
@@ -107,7 +107,7 @@
     "title": "تور مازندران",
     "fleetVehicle": "اس یو وی",
     "price": 1850000,
-    "availableSeats": 297,
+    "availableSeats": 288,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
@@ -130,7 +130,7 @@
     "title": "تور آفرود",
     "fleetVehicle": "هواپیما",
     "price": 35000000,
-    "availableSeats": 25,
+    "availableSeats": 17,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
@@ -153,7 +153,7 @@
     "title": "تور ایتالیا",
     "fleetVehicle": "هواپیما",
     "price": 38000000,
-    "availableSeats": 17,
+    "availableSeats": 6,
     "insurance": true,
     "options": [
       "نهار و صبحانه",

@@ -3,9 +3,9 @@
 import defaultOptions from "@/config/reactQuery";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-function TanstackQueryProvider({ children }) {
-  const queryClient = new QueryClient({ defaultOptions });
+const queryClient = new QueryClient({ defaultOptions });
 
+function TanstackQueryProvider({ children }) {
   return (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );

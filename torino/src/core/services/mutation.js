@@ -28,13 +28,12 @@ const useBasket = () => {
 
 //hook for submit order request
 const useOrder = () => {
-  const queryClient = useQueryClient();
+  // const queryClient = useQueryClient();
   const mutationFn = (form) => api.post("order", form);
-  const onSuccess = () => {
-    queryClient.invalidateQueries(["transactions"]);
-    queryClient.invalidateQueries(["user-tours"]);
-  };
-  return useMutation({ mutationFn, onSuccess });
+  // const onSuccess = () => {
+  //   queryClient.invalidateQueries({ queryKey: ["transactions"] });
+  // };
+  return useMutation({ mutationFn });
 };
 
 //hook for update user profile details

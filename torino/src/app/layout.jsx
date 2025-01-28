@@ -4,13 +4,14 @@ import Layout from "@/layouts/Layout";
 import { Toaster } from "react-hot-toast";
 import SignInModal from "@/template/SignInModal";
 import AuthProvider from "@/providers/AuthContext";
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
 
 export const metadata = {
   title: "تورینو",
   description:
     "شرکت خدمات مسافرتی تورینو. تورینو بزرگترین و معتبرترین سایت خرید اینترنتی بلیط هواپیما ، قطار و اتوبوس در کشور.",
-  icons: { icon: "./favicon.ico" },
+  // icons: { icon: "./favicon.ico" },
 };
 
 export default function RootLayout({ children }) {
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
             <Layout>{children}</Layout>
             <SignInModal />
           </AuthProvider>
+          <ReactQueryDevtools />
         </TanstackQueryProvider>
         <Toaster />
       </body>

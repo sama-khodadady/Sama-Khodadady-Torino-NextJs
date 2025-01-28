@@ -12,5 +12,5 @@ export default TourDetail;
 export async function generateMetadata({ params }) {
   const { tourId } = await params;
   const { data } = await getTour(tourId);
-  return { title: data?.title };
+  return { title: data?.title};
 }

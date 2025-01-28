@@ -24,7 +24,7 @@ function OrderSidebar({ tourId, isPending }) {
           <span>{price}</span> تومان
         </p>
       </div>
-      <button form="order" type="submit">
+      <button form="order" type="submit" disabled={isPending}>
         {isPending ? "درحال انتقال..." : "ثبت و خرید نهایی"}
       </button>
     </div>

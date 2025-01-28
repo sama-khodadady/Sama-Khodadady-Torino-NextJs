@@ -21,7 +21,7 @@ function OrderButton({ tourId }) {
     });
   };
   return (
-    <button onClick={orderHandler} className={styles.button}>
+    <button onClick={orderHandler} disabled={isPending} className={styles.button}>
       {isPending ? "...در حال پردازش" : "رزرو و خرید"}
     </button>
   );

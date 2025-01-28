@@ -3,7 +3,8 @@ const defaultOptions = {
     refetchOnWindowFocus: false,
     refetchOnMount: false,
     retry: 1,
-    staleTime: 0,
+    // staleTime: 0,
+    gcTime: 0,
   },
 };
 

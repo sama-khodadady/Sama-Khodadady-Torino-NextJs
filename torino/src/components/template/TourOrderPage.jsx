@@ -11,7 +11,7 @@ import styles from "@/template/TourOrderPage.module.css";
 
 function TourOrderPage({ tourId }) {
   const { mutate, isPending } = useOrder();
-  const { replace } = useRouter();
+  const { push } = useRouter();
 
   const submitOrderHandler = (data) => {
     const birthDate = formatBirthDate(data.date);
@@ -21,15 +21,17 @@ function TourOrderPage({ tourId }) {
     mutate(form, {
       onSuccess: (data) => {
         toast.success(data.data.message);
-        replace("/dashboard");
+        push("/dashboard");
       },
       onError: (error) => {
+        console.log(error);
         if (error.status === 400) {
           toast.error(error.data.message);
+          push("/");
         }
         if (error.status === 404) {
           toast.error(error.data.message);
-          replace(`/tours/${tourId}`);
+          push(`/tours/${tourId}`);
         }
       },
     });

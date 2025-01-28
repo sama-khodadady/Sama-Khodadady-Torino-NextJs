@@ -7,7 +7,7 @@ import styles from "@/template/TransactionsPage.module.css";
 
 function TransactionsPage() {
   const { data, isLoading } = useGetTransactions();
-  console.log(data);
+  // console.log(data);
   return (
     <div className={styles.transaction}>
       <table>
