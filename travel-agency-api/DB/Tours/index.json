@@ -84,7 +84,7 @@
     "title": "تور اربیل",
     "fleetVehicle": "اس یو وی",
     "price": 10500000,
-    "availableSeats": 4,
+    "availableSeats": 3,
     "insurance": false,
     "options": [
       "نهار و صبحانه",
@@ -130,7 +130,7 @@
     "title": "تور آفرود",
     "fleetVehicle": "هواپیما",
     "price": 35000000,
-    "availableSeats": 17,
+    "availableSeats": 16,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
@@ -153,7 +153,7 @@
     "title": "تور ایتالیا",
     "fleetVehicle": "هواپیما",
     "price": 38000000,
-    "availableSeats": 6,
+    "availableSeats": 5,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
